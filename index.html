@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DapurBali</title>
+    <link href="/sass/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .nav-link:hover {
+            color: #479E10;
+        !important;
+        }
+
+        .custom-icon {
+            color: #479E10;
+        }
+
+        .custom-font {
+            font-size: 14px;
+        }
+
+        .frost {
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        #goToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar frost navbar-expand-md navbar-light pt-2 pb-2 sticky-top">
+    <div class="container-xl">
+        <!--        navbar brand/logo-->
+        <a class="navbar-brand text-secondary" href="#hero">
+            <span class="display-5">
+                <span class="fw-bold">Dapur</span>Bali
+            </span>
+        </a>
+        <!--        toggle button for mobile-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--        navbar links-->
+        <div class="collapse navbar-collapse justify-content-end align-self-center" id="main-nav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary " href="#product">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#promo">Promo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#profile">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Hero-->
+<section id="hero">
+    <div class="container-md">
+        <div class="row g-4 justify-content-center align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <h1>
+                    <div class="fw-semibold text-primary">
+                        Sajikan hidangan terbaikmu, Bersama DapurBali
+                    </div>
+                </h1>
+                <p class="mt-4 mb-5 text-muted">
+                    Kualitas terbaik selalu jadi prioritas kami. Berkomitmen memberikan pengalaman terbaik, produk aman,
+                    dan legal, serta memenuhi standar pelanggan. Tepat waktu dan mutu produk kami jadi fokus
+                    utama untuk kepuasan pelanggan.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg text-light rounded-pill px-4 fw-semibold">Langganan
+                    Sekarang</a>
+            </div>
+            <div class="col-md-6 text-center d-none d-md-block">
+                <img src="/assets/image/hero.webp" class="img-fluid" alt="hero">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Pelanggan Kami-->
+<section>
+    <div class="container-md">
+        <h1>
+            <div class="fw-semibold text-center text-primary h1">
+                Pelanggan Kami
+            </div>
+        </h1>
+        <div class="d-md-none mt-5">
+            <div id="mobile-carousel" class="carousel slide justify-content-center align-items-center">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/image/pelanggan1.webp" class="d-block w-100" alt="pelanggan1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/image/pelanggan3.webp" class="d-block w-100" alt="pelanggan3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mobile-carousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mobile-carousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </button>
+            </div>
+        </div>
+        <div class="d-none d-md-block">
+            <div class="row justify-content-center align-items-center gap-5 my-5">
+                <div class="col-md-3 text-center">
+                    <img src="/assets/image/pelanggan1.webp" class="img-fluid" alt="pelanggan1">
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="/assets/image/pelanggan2.webp" class="img-fluid" alt="pelanggan2">
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="/assets/image/pelanggan3.webp" class="img-fluid" alt="pelanggan3">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--About Us-->
+<section id="about-us">
+    <div class="container-md mt-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 text-center d-none d-md-block">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="/assets/image/sate.webp" class="w-100" alt="about-us">
+                        <img src="/assets/image/babi.webp" class="w-100 mt-4" alt="about-us">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/image/nasi.webp" class="w-100" alt="about-us">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+                <h1 class="fw-semibold text-primary h1">Tentang Kami</h1>
+                <p class="my-5 text-muted my text-start">
+                    Kami menyediakan berbagai macam pilihan menu yang sudah matang, siap masak untuk memudahkan anda
+                    dalam memilih makanan yang diinginkan. Kami berkomitmen untuk menggunakan bahan-bahan berkualitas
+                    dan segar untuk menjaga kualitas dan rasa dari setiap hidangan yang kami sajikan. Selain itu, kami
+                    juga menyediakan layanan catering untuk berbagai acara seperti pesta ulang tahun, pernikahan, dan
+                    acara bisnis. Kami dapat menyesuaikan menu sesuai dengan kebutuhan dan preferensi pelanggan untuk
+                    memastikan bahwa setiap acara berjalan dengan sukses.
+                </p>
+                <a href="#" class="btn btn-secondary btn-lg text-light rounded-pill px-4 fw-semibold">Lihat
+                    Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Produk-->
+<section id="product">
+    <div class="container-md mt-5">
+        <h1 class="fw-semibold text-center text-primary h1">Menu Kami</h1>
+        <div class="d-md-none mt-4">
+            <div id="product-carousel" class="carousel slide justify-content-center align-items-center">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <img src="/assets/image/ayam_betutu.webp" class="w-100 ms-4" alt="betutu">
+                            <h3 class="fw-semibold text-primary h3 text-start">Ayam Betutu</h3>
+                            <p class="text-muted text-start">
+                                Ayam yang dibumbui dengan bumbu betutu yang terdiri dari berbagai macam rempah-rempah
+                                dan bumbu-bumbu lainnya.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <img src="/assets/image/ayam%20betutu%202.webp" class="w-100" alt="betutu">
+                            <h3 class="fw-semibold text-primary h3">Ayam Betutu</h3>
+                            <p class="text-muted text-start">
+                                Ayam yang dibumbui dengan bumbu betutu yang terdiri dari berbagai macam rempah-rempah
+                                dan bumbu-bumbu lainnya.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <img src="/assets/image/kopi.webp" class="w-100" alt="kopi">
+                            <h3 class="fw-semibold text-primary h3">Kopi Bali</h3>
+                            <p class="text-muted text-start">
+                                Kopi Bali adalah salah satu kopi yang berasal dari pulau Bali. Kopi Bali dikenal karena
+                                memiliki
+                                karakteristik rasa yang unik dan khas, yang disebabkan oleh beberapa hal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#product-carousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" ariahidden="true"></span>
+                    <span class="sr-only"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="d-none d-md-block">
+            <div class="row justify-content-center align-items-center gap-5 my-5">
+                <div class="col-md-3">
+                    <img src="/assets/image/ayam_betutu.webp" class="img-fluid" alt="betutu">
+                    <h3 class="fw-semibold text-primary h3 text-start">Ayam Betutu</h3>
+                    <p class="text-muted text-start">
+                        Ayam yang dibumbui dengan bumbu
+                        betutu yang terdiri dari berbagai macam rempah-rempah dan bumbu-bumbu lainnya.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="/assets/image/ayam%20betutu%202.webp" class="img-fluid" alt="betutu">
+                    <h3 class="fw-semibold text-primary h3">Ayam Betutu</h3>
+                    <p class="text-muted">
+                        Ayam yang dibumbui dengan bumbu
+                        betutu yang terdiri dari berbagai macam rempah-rempah dan bumbu-bumbu lainnya.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="/assets/image/kopi.webp" class="img-fluid" alt="kopi">
+                    <h3 class="fw-semibold text-primary h3">Kopi Bali</h3>
+                    <p class="text-muted">
+                        Kopi Bali adalah salah satu kopi yang berasal dari pulau Bali. Kopi Bali dikenal karena memiliki
+                        karakteristik rasa yang unik dan khas, yang disebabkan oleh beberapa hal.
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#" class="btn btn-secondary btn-lg text-light rounded-pill px-4 fw-semibold">Lihat Semuanya <i
+                    class="bi bi-arrow-right fw-semibold"></i></a>
+        </div>
+    </div>
+</section>
+
+<!--Promo-->
+<section id="promo" class="bg-success">
+    <div class="container-md mt-5">
+        <h1 class="fw-semibold text-center text-primary h1">Promo Menarik</h1>
+        <div class="d-md-none mt-4">
+            <div id="promo-carousel" class="carousel slide justify-content-center align-items-center">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-md-4">
+                            <div class="card p-3 border-0 rounded-3 bg-light">
+                                <img src="/assets/image/promo.webp" alt="nasi" class="img-fluid rounded-3">
+                                <div class="card-body d-flex justify-content-between flex-column">
+                                    <span class="text-muted custom-font"><i
+                                            class="bi bi-calendar-week custom-icon me-2"></i>Berlaku hingga 31 Aug 2023</span>
+                                    <h6 class="fw-semibold text-primary h6 mt-3">Rasakan Kelezatan Hidangan Premium
+                                        Kami, Dalam
+                                        Promo Merdeka!</h6>
+                                    <div class="text-end mt-4">
+                                        <a href="#"
+                                           class="btn btn-secondary btn-sm text-light rounded-pill px-4 fw-semibold">Selengkapnya<i
+                                                class="bi bi-arrow-right fw-semibold ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card p-3 border-0 rounded-3 bg-light">
+                                <img src="/assets/image/promo.webp" alt="nasi" class="img-fluid rounded-3">
+                                <div class="card-body d-flex justify-content-between flex-column">
+                                    <span class="text-muted custom-font"><i
+                                            class="bi bi-calendar-week custom-icon me-2"></i>Berlaku hingga 31 Aug 2023</span>
+                                    <h6 class="fw-semibold text-primary h6 mt-3">Rasakan Kelezatan Hidangan Premium
+                                        Kami, Dalam
+                                        Promo Merdeka!</h6>
+                                    <div class="text-end mt-4">
+                                        <a href="#"
+                                           class="btn btn-secondary btn-sm text-light rounded-pill px-4 fw-semibold">Selengkapnya<i
+                                                class="bi bi-arrow-right fw-semibold ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card p-3 border-0 rounded-3 bg-light">
+                                <img src="/assets/image/promo.webp" alt="nasi" class="img-fluid rounded-3">
+                                <div class="card-body d-flex justify-content-between flex-column">
+                                    <span class="text-muted custom-font"><i
+                                            class="bi bi-calendar-week custom-icon me-2"></i>Berlaku hingga 31 Aug 2023</span>
+                                    <h6 class="fw-semibold text-primary h6 mt-3">Rasakan Kelezatan Hidangan Premium
+                                        Kami, Dalam
+                                        Promo Merdeka!</h6>
+                                    <div class="text-end mt-4">
+                                        <a href="#"
+                                           class="btn btn-secondary btn-sm text-light rounded-pill px-4 fw-semibold">Selengkapnya<i
+                                                class="bi bi-arrow-right fw-semibold ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#promo-carousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#promo-carousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" ariahidden="true"></span>
+                    <span class="sr-only"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="d-none d-md-block">
+            <div class="row justify-content-center align-items-center my-5">
+                <div class="col-md-4">
+                    <div class="card p-3 border-0 rounded-3 bg-light">
+                        <img src="/assets/image/promo.webp" alt="nasi" class="img-fluid rounded-3">
+                        <div class="card-body d-flex justify-content-between flex-column">
+                            <span class="text-muted custom-font"><i class="bi bi-calendar-week custom-icon me-2"></i>Berlaku hingga 31 Aug 2023</span>
+                            <h6 class="fw-semibold text-primary h6 mt-3">Rasakan Kelezatan Hidangan Premium
+                                Kami, Dalam
+                                Promo Merdeka!</h6>
+                            <div class="text-end mt-4">
+                                <a href="#" class="btn btn-secondary btn-sm text-light rounded-pill px-4 fw-semibold">Selengkapnya<i
+                                        class="bi bi-arrow-right fw-semibold ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 border-0 rounded-3 bg-light">
+                        <img src="/assets/image/promo.webp" alt="nasi" class="img-fluid rounded-3">
+                        <div class="card-body d-flex justify-content-between flex-column">
+                            <span class="text-muted custom-font"><i class="bi bi-calendar-week custom-icon me-2"></i>Berlaku hingga 31 Aug 2023</span>
+                            <h6 class="fw-semibold text-primary h6 mt-3">Rasakan Kelezatan Hidangan Premium
+                                Kami, Dalam
+                                Promo Merdeka!</h6>
+                            <div class="text-end mt-4">
+                                <a href="#" class="btn btn-secondary btn-sm text-light rounded-pill px-4 fw-semibold">Selengkapnya<i
+                                        class="bi bi-arrow-right fw-semibold ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 border-0 rounded-3 bg-light">
+                        <img src="/assets/image/promo.webp" alt="nasi" class="img-fluid rounded-3">
+                        <div class="card-body d-flex justify-content-between flex-column">
+                            <span class="text-muted custom-font"><i class="bi bi-calendar-week custom-icon me-2"></i>Berlaku hingga 31 Aug 2023</span>
+                            <h6 class="fw-semibold text-primary h6 mt-3">Rasakan Kelezatan Hidangan Premium
+                                Kami, Dalam
+                                Promo Merdeka!</h6>
+                            <div class="text-end mt-4">
+                                <a href="#" class="btn btn-secondary btn-sm text-light rounded-pill px-4 fw-semibold">Selengkapnya<i
+                                        class="bi bi-arrow-right fw-semibold ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Profile-->
+<section id="profile" class="bg-success">
+    <div class="container-md mt-md-5">
+        <h1 class="fw-semibold text-center text-primary h1">Profile</h1>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 text-center text-md-start mt-3">
+                <h4>
+                    <div class="fw-semibold text-primary">
+                        Halo Semua 👋, It's me!
+                    </div>
+                </h4>
+                <div class="col-md-6 text-center d-md-none mt-4">
+                    <img src="/assets/image/foto.webp" class="img-fluid w-75" alt="hero">
+                </div>
+                <h1>
+                    <div class="fw-bold text-primary h1">
+                        Syifaul Qolbi A.D
+                    </div>
+                </h1>
+                <div id="typing-text" class="text-muted h5 mt-4"></div>
+                <div class="mt-4">
+                    <!--                    social media-->
+                    <a href="https://instagram.com/syifaulqolbi_/" target="_blank"
+                       class="text-decoration-none text-muted me-3"><i class="bi bi-instagram fs-3"></i></a>
+                    <a href="https://wa.me/+62895363309434" target="_blank"
+                       class="text-decoration-none text-muted me-3"><i class="bi bi-whatsapp fs-3"></i></a>
+                    <a href="https://www.linkedin.com/in/syifaulqolbi/" target="_blank"
+                       class="text-decoration-none text-muted me-3"><i class="bi bi-linkedin fs-3"></i></a>
+                    <a href="https://github.com/syifaulqolbii/" target="_blank"
+                       class="text-decoration-none text-muted me-3"><i class="bi bi-github fs-3"></i></a>
+                    <a href="https://syifaulqolbi.me/" target="_blank" class="text-decoration-none text-muted me-3"><i
+                            class="bi bi-globe fs-3"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center d-none d-md-block mt-4">
+                <img src="/assets/image/foto.webp" class="img-fluid w-75" alt="hero">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="bg-light py-4 mt-4">
+    <div class="container">
+        <div class="row justify-content-between text-center text-md-start">
+            <div class="col-md-4">
+                <h1 class="h3 text-secondary"><span class="fw-bold">Dapur</span>Bali</h1>
+                <p class="mb-4">Canggu, Bali, Indonesia</p>
+                <p class="mb-0"><i class="bi bi-envelope me-1"></i> syifaulqolbi32@gmail.com</p>
+                <p><i class="bi bi-phone me-1"></i> 0895-3633-09434</p>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <h1 class="h3 fw-semibold">Navigation</h1>
+                <ul class="list-unstyled">
+                    <li><a href="#hero" class="text-decoration-none text-dark">Home</a></li>
+                    <li><a href="#product" class="text-decoration-none text-dark">Menu</a></li>
+                    <li><a href="#promo" class="text-decoration-none text-dark">Promo</a></li>
+                    <li><a href="#about-us" class="text-decoration-none text-dark">About Us</a></li>
+                    <li><a href="#profile" class="text-decoration-none text-dark">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button id="goToTopBtn" class="btn btn-secondary rounded-pill" onclick="goToTop()"><i class="bi bi-arrow-up-circle text-light fs-3"></i></button>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+<script>
+    const texts = [
+        "Asal saya dari Solo",
+        "Asal instansi dari Universitas Muhammadiyah Surakarta",
+        "Email saya syifaulqolbi32@gmail.com",
+        "Nomor Telepon saya 0895363309434",
+    ];
+
+    const typingTextElement = document.getElementById("typing-text");
+
+    let currentIndex = 0;
+
+    function typeText() {
+        const text = texts[currentIndex];
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < text.length) {
+                typingTextElement.textContent += text.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 80);
+            } else {
+                setTimeout(function () {
+                    typingTextElement.textContent = "";
+                    currentIndex = (currentIndex + 1) % texts.length;
+                    typeText();
+                }, 1000);
+            }
+        }
+        type();
+    }
+    typeText();
+
+    function goToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', function() {
+        var goToTopBtn = document.getElementById('goToTopBtn');
+        if (window.scrollY > 100) {
+            goToTopBtn.style.display = 'block';
+        } else {
+            goToTopBtn.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
